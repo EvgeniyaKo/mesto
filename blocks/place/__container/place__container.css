@@ -1,0 +1,6 @@
+.place__container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+} 
