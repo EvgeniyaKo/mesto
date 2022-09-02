@@ -1,4 +1,9 @@
-.add-button{
-    max-width: 282px;
-    align-self: center;
+.add-button {
+  max-width: 282px;
+  align-self: center;
+}
+@media screen and(min-width: 658px) {
+    .add-button{
+        width: 150px;
+    }
 }

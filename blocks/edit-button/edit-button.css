@@ -3,10 +3,6 @@
   box-shadow: none;
   border: 0;
   min-width: 18px;
-  background-image: url(../../images/Add-Button-mobile.svg);
+  
 }
-@media screen and(min-width: 652px) {
-  .edit-button {
-    width: 150px;
-  }
-}
+
