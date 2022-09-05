@@ -2,3 +2,6 @@
     border: 0;
     background-color: #000;
 }
+.button:hover{
+    opacity: 0.5;
+}

@@ -1,7 +1,7 @@
-.profile__info_container{
+.profile__container{
     display: flex;
     width: 100%;
     justify-content: center;
-    flex-direction: column;
-
+    flex-direction: row;
+    padding: 0;
 }

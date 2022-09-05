@@ -15,28 +15,22 @@
         <div class="profile">
             <img src="./images/Avatar.jpg" alt="аватар" class="avatar">
             <div class="profile__info">
-                <div class="profile__info profile__info_container">
-                <h1 class="profile__name">Жак-Ив Кусто 
-                <button class="button">
-                    <img src="./images/Edit Button.svg" alt="кнопка редактирования" class="edit-button">
+                <div class="profile__info profile__container">
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <button class="button edit-button">
+                    <img src="./images/Edit Button.svg" alt="кнопка редактирования" -->
                 </button>
-            </h1>
+            </div>
+            
             
                 <p class="profile__subtitle">Исследователь моря</p>
+            
             </div>
-            </div>
-            <button class="button">
-                <img src="./images/Add-Button-mobile.svg" alt="кнопка 'Добавить'" class="add-button">
+            <button class="button add-button">
+                <!--img src="./images/Add-Button-mobile.svg" alt="кнопка 'Добавить'" class="add-button__img"-->
             </button>
         </div>
-        <div class="popup">
-            <div class="popup__contant">
-                <h3 class="popup__title">Редактировать профиль</h3>
-                <input type="text" class="input-name">
-                <input type="text" class="input-job">
-                <button class="button popup__button">Сохранить</button>
-            </div>
-        </div>
+       
         <div class="places">
             <div class="place">
                 <img src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Старинная церковь на фоне зеленых гор" class="place__photo">
@@ -102,6 +96,20 @@
         <p class="copiright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-    
+    <script src="script.js"></script>  
 </body>
+<div class="popup">
+    <div class="popup__contant popup__open">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form action="" class="popup__form">
+        <input type="text" placeholder="Введите имя" class="input-name">
+        <input type="text" placeholder="Ваша профессия" class="input-job">
+        <button class="button popup__button">Сохранить</button>
+    </form>
+    <button class="button popup__close">
+        <img src="./images/Close Icon.svg" alt="крестик закрытия">
+    </button>
+    </div>
+    
+</div>
 </html>
