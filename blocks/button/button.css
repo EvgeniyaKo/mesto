@@ -1,7 +1,10 @@
-.button{
-    border: 0;
-    background-color: #000;
+.button {
+  border: 0;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
 }
-.button:hover{
-    opacity: 0.5;
+.button:hover {
+  opacity: 0.5;
 }
