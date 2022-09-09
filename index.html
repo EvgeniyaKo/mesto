@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mesto</title>
   </head>
   <body class="root">
     <header class="header">
@@ -17,89 +17,84 @@
         <div class="profile__info">
           <div class="profile__container">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="button edit-button">
-              <img src="./images/Edit-Button.svg" alt="кнопка редактирования" />
-            </button>
+            <button
+              class="button button__edit popup__opened"
+              type="submit"
+            ></button>
           </div>
 
           <p class="profile__job">Исследователь океана</p>
         </div>
-        <button class="button add-button"></button>
+        <button class="button button__add" type="submit"></button>
       </section>
 
       <section class="places">
         <div class="place">
           <img
-            src="./images/kirill-pershin-1088404-unsplash.jpg"
+            src="./images/Karachaevsk.jpg"
             alt="Старинная церковь на фоне зеленых гор"
             class="place__photo"
           />
           <div class="place__container">
             <h2 class="place__name">Карачаевск</h2>
-            <button class="button like">
-            </button>
+            <button class="button like" type="submit"></button>
           </div>
         </div>
 
         <div class="place">
           <img
-            src="./images/kirill-pershin-1404681-unsplash-1.jpg"
+            src="./images/Elbrus.jpg"
             alt="Рассвет в долине"
             class="place__photo"
           />
           <div class="place__container">
             <h2 class="place__name">Гора Эльбрус</h2>
-            <button class="button like">
-            </button>
+            <button class="button like" type="submit"></button>
           </div>
         </div>
         <div class="place">
           <img
-            src="./images/kirill-pershin-1556355-unsplash.jpg"
+            src="./images/Dombai.jpg"
             alt="Горный пик на фоне серого неба"
             class="place__photo"
           />
           <div class="place__container">
             <h2 class="place__name">Домбай</h2>
-            <button class="button like">
-            </button>
+            <button class="button like" type="submit"></button>
           </div>
         </div>
 
         <div class="place">
           <img
-            src="./images/kirill-pershin-1404681-unsplash-1.jpg"
+            src="./images/Elbrus.jpg"
             alt="Рассвет в долине"
             class="place__photo"
           />
           <div class="place__container">
             <h2 class="place__name">Гора Эльбрус</h2>
-            <button class="button like">
-            </button>
+            <button class="button like" type="submit"></button>
           </div>
         </div>
         <div class="place">
           <img
-            src="./images/kirill-pershin-1088404-unsplash.jpg"
+            src="./images/Karachaevsk.jpg"
             alt="Старинная церковь на фоне зеленых гор"
             class="place__photo"
           />
           <div class="place__container">
             <h2 class="place__name">Карачаевск</h2>
-            <button class="button like">
-            </button>
+            <button class="button like" type="submit"></button>
           </div>
         </div>
         <div class="place">
           <img
-            src="./images/kirill-pershin-1556355-unsplash.jpg"
+            src="./images/Dombai.jpg"
             alt="Горный пик"
             class="place__photo"
           />
           <div class="place__container">
             <h2 class="place__name">Домбай</h2>
-            <button class="button like">
-            </button>
+            <button class="button like" type="submit"></button>
           </div>
         </div>
       </section>
@@ -109,19 +104,17 @@
       <p class="copiright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-    <section class="popup">
-        <div class="popup__container">
-          <h3 class="popup__title">Редактировать профиль</h3>
-          <form action="#" class="popup__form">
-            <input type="text" placeholder="Ваше имя" class="input-name"/>
-            <input type="text" placeholder="О себе" class="input-job" />
-            <button class="button popup__button">Сохранить</button>
-          </form>
-          <button class="button popup__close">
-          </button>
-        </div>
-      </section>
-    <script src="./index.js"></script>
+    <div class="popup">
+      <div class="popup__container">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form action="#" class="popup__form">
+          <input type="text" placeholder="Ваше имя" class="input__name" />
+          <input type="text" placeholder="О себе" class="input__job" />
+          <button class="button popup__button" type="submit">Сохранить</button>
+        </form>
+        <button class="button popup__close" type="resert"></button>
+      </div>
+    </div>
+    <script src="./scripts/index.js"></script>
   </body>
- 
 </html>

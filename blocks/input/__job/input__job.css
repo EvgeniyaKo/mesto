@@ -1,9 +1,9 @@
-.input-job {
+.input__job {
   border: 0;
   border-bottom: 1px solid #eee;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  margin-top: 30px;
+  margin-top: 25px;
   height: 27px;
 }

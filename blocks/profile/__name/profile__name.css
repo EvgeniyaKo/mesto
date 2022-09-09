@@ -4,8 +4,13 @@
   line-height: 33px;
   text-align: center;
   margin: 0;
+  max-width: 340px;
+  min-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-@media screen and (min-width: 562px) {
+@media screen and (min-width: 889px) {
   .profile__name {
     font-size: 42px;
     line-height: 114%;

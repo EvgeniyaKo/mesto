@@ -1,0 +1,16 @@
+.button__add {
+  max-width: 282px;
+  align-self: center;
+  width: 282px;
+  background-image: url(../../../images/Add-Button-mobile.svg);
+  height: 50px;
+  padding: 0;
+}
+
+@media screen and (min-width: 562px) {
+  .button__add {
+    width: 150px;
+    background-image: url(../../../images/Add\ Button.svg);
+    margin-bottom: 22px;
+  }
+}
