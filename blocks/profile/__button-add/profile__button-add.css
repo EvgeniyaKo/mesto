@@ -5,6 +5,7 @@
   background-image: url(../../../images/Add-Button-mobile.svg);
   height: 50px;
   padding: 0;
+  background-size: cover;
 }
 
 @media screen and (min-width: 562px) {

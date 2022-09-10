@@ -1,9 +1,8 @@
-.input__job {
+.popup__input {
   border: 0;
-  border-bottom: 1px solid #eee;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  margin-top: 25px;
+  border-bottom: 1px solid #eee;
   height: 27px;
 }

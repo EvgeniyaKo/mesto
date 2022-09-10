@@ -2,12 +2,11 @@
     background-color: #000;
     border: 0;
     width: 18px;
-    padding-left: 17px;
     background-image: url(../../../images/Edit-Button.svg);
     background-repeat: no-repeat;
     height: 18px;
     margin-left: 10px;
-    background-size: contain;
+    background-size: cover;
   }
   
   @media screen and (min-width: 562px) {

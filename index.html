@@ -17,15 +17,12 @@
         <div class="profile__info">
           <div class="profile__container">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button
-              class="button profile__button-edit" 
-              type="submit"
-            ></button>
+            <button class="button profile__button-edit" type="submit"></button>
           </div>
 
           <p class="profile__job">Исследователь океана</p>
         </div>
-        <button class="button profile__button-add" type="submit"></button>
+        <button class="button profile__button-add" type="button"></button>
       </section>
 
       <section class="places">
@@ -37,7 +34,7 @@
           />
           <div class="place__container">
             <h2 class="place__name">Карачаевск</h2>
-            <button class="button like" type="submit"></button>
+            <button class="button place__like" type="button"></button>
           </div>
         </div>
 
@@ -49,7 +46,7 @@
           />
           <div class="place__container">
             <h2 class="place__name">Гора Эльбрус</h2>
-            <button class="button like" type="submit"></button>
+            <button class="button place__like" type="button"></button>
           </div>
         </div>
         <div class="place">
@@ -60,7 +57,7 @@
           />
           <div class="place__container">
             <h2 class="place__name">Домбай</h2>
-            <button class="button like" type="submit"></button>
+            <button class="button place__like" type="button"></button>
           </div>
         </div>
 
@@ -72,7 +69,7 @@
           />
           <div class="place__container">
             <h2 class="place__name">Гора Эльбрус</h2>
-            <button class="button like" type="submit"></button>
+            <button class="button place__like" type="button"></button>
           </div>
         </div>
         <div class="place">
@@ -83,7 +80,7 @@
           />
           <div class="place__container">
             <h2 class="place__name">Карачаевск</h2>
-            <button class="button like" type="submit"></button>
+            <button class="button place__like" type="button"></button>
           </div>
         </div>
         <div class="place">
@@ -94,7 +91,7 @@
           />
           <div class="place__container">
             <h2 class="place__name">Домбай</h2>
-            <button class="button like" type="submit"></button>
+            <button class="button place__like" type="button"></button>
           </div>
         </div>
       </section>
@@ -104,12 +101,20 @@
       <p class="copiright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup popup_opened">
+    <div class="popup">
       <div class="popup__container">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form action="#" class="popup__form">
-          <input type="text" placeholder="Ваше имя" class="popup__input-name" />
-          <input type="text" placeholder="О себе" class="popup__input-job" />
+          <input
+            type="text"
+            placeholder="Ваше имя"
+            class="popup__input popup__input_name"
+          />
+          <input
+            type="text"
+            placeholder="О себе"
+            class="popup__input popup__input_job"
+          />
           <button class="button popup__button" type="submit">Сохранить</button>
         </form>
         <button class="button popup__close" type="reset"></button>
