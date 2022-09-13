@@ -5,13 +5,17 @@
   background-image: url(../../../images/Add-Button-mobile.svg);
   height: 50px;
   padding: 0;
-  background-size: cover;
+  background-size: 282px 50px;
+  border: 2px;
+  border-radius: 2px;
+  background-color: transparent;
 }
 
 @media screen and (min-width: 562px) {
   .profile__button-add {
     width: 150px;
-    background-image: url(../../../images/Add\ Button.svg);
+    background-image: url(../../../images/Add-Button.svg);
     margin-bottom: 22px;
+    background-size: 150px 50px;
   }
 }

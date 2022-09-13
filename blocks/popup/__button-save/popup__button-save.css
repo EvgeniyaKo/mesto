@@ -1,13 +1,17 @@
-.popup__button {
+.popup__button-save {
   max-width: 238px;
   background-color: #000000;
   color: #ffffff;
   max-height: 50px;
   min-height: 48px;
-  margin-top: 48px;
+  margin-top: 18px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 17px;
+  justify-content: center;
 }
 @media screen and (min-width: 562px) {
-  .popup__button {
+  .popup__button-save {
     max-width: 358px;
   }
 }
