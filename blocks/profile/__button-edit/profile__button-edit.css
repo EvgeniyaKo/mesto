@@ -5,14 +5,15 @@
   background-image: url(../../../images/Edit-Button.svg);
   background-repeat: no-repeat;
   height: 18px;
-  margin-left: 5px;
+  margin-left: 10px;
   background-size: 18px 18px;
 }
 
-@media screen and (min-width: 562px) {
+@media screen and (min-width: 570px) {
   .profile__button-edit {
     width: 24px;
     height: 24px;
     margin-left: 22px;
+    background-size: 24px 24px;
   }
 }
