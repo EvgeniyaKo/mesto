@@ -20,7 +20,7 @@
 @import url(../blocks/place/__container/place__container.css);
 @import url(../blocks/place/__name/place__name.css);
 @import url(../blocks/place/__button-like/place__button-like.css);
-@import url(../blocks/copiright/copiright.css);
+@import url(../blocks/footer/__copiright/footer__copiright.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);

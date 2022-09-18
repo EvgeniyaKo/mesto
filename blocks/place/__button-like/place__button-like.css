@@ -10,3 +10,6 @@
   background-position-y: center;
   height: 19px;
 }
+.place__button-like:active {
+  background-image: url(../../../images/like-active.svg);
+}

@@ -4,14 +4,20 @@
   color: #ffffff;
   max-height: 50px;
   min-height: 48px;
-  margin-top: 18px;
+  margin-top: 19px;
   border-radius: 2px;
   font-size: 14px;
   line-height: 17px;
   justify-content: center;
 }
+.popup__button-save:hover {
+  opacity: 0.8;
+}
+
 @media screen and (min-width: 562px) {
   .popup__button-save {
     max-width: 358px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
