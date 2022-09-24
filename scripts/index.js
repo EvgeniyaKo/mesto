@@ -72,97 +72,43 @@ const initialCards = [
 ];
 
 
-/*const list = document.querySelector("cards__list"); //список <ul>//
-const itemTemplate = document.querySelector(".list-item-template"); //элемен списка с <template>//
-const deleteButton = document.querySelector(".card__button-delete");//кнопка удаления карточки
- const likeButton = document.querySelector(".card__button-like");//кнопка лайк
- let newCard = null;
-
-function create() {
-  initialCards.forEach(createCard);
-  
-}
-
-function createCard(cards) {
-  const newHtmlElement = itemTemplate.cloneNode(true);//клонируем template элемент
-  const cardName = newHtmlElement.querySelector(".card__name").textContent =
-    name;//заголовок карточки
-  const cardFoto = newHtmlElement.querySelector("card__photo").src = link;//ссылка на фото
-  setListenersForCard(newHtmlElement);
-  list.prependChild(newHtmlElement);
-}
-
-
-
-function setListenersForCard(element) {
-  deleteButton.addEventListener("click", handlerDelete);
-  likeButton.addEventListener("click"); //функция лайка
-  const openPhoto = itemTemplate.querySelector("card__photo");
-  openPhoto.addEventListener("click"); //функция открытия фото
-}*/
-
-/*const list = document.querySelector("cards__list"); //список <ul>//
-const itemTemplate = document.querySelector(".list-item-template"); //элемен списка с <template>//
-const deleteButton = document.querySelector(".card__button-delete");//кнопка удаления карточки
- const likeButton = document.querySelector(".card__button-like");//кнопка лайк
- let newCard = null;
-
-
-const cards = initialCards.reverse;
-
-function create(){
-  initialCards.forEach((cards)=>{renderCard(cards)});
-  };
-
-function createCard(cardItem){
-
-  const cardsElement = itemTemplate.cloneNode(true);
-  const cardsTitle = cardsElement.querySelector('.card__name');
-  const cardsPhoto = cardsElement.querySelector('.card__photo');
-  const cardDescription = cardsElement.querySelector('.card__name');
-  cardDescription = cardsPhoto = cards.name;
-  cardsTitle.textContent = cards.name;
-  cardsPhoto.src = cards.link;
-  setListeners(cardsElement);
-  return cardsElement;
-}
-
-function setListeners(cardsElement){
-  deleteButton.addEventListener("click", handlerDelete);
-  likeButton.addEventListener("click"); //лайк
-  const openPhoto = itemTemplate.querySelector("card__photo");
-  openPhoto.addEventListener("click", ); //открытие фото
-}
-
-function popupPhotoOpen(){
-  openPhoto.classList.add(card__photo_open);
-}
-
-function renderCard(cards){
-  itemTemplate.prepend(createCard(cards));
-};
-
-create();*/
-
-
-
-
-
 const list = document.querySelector(".cards__list"); //список <ul>//
 const itemTemplate = document.querySelector(".list-item-template"); //элемен списка с <template>//
-const deleteButton = document.querySelector(".card__button-delete");//кнопка удаления карточки
-const likeButton = document.querySelector(".card__button-like");//кнопка лайк
+const cardContent = document.querySelector('.list-item-template').content;
 
 
-
-function renderCard(){
+function renderCard(item){ //создание карточек
   const cardContent = document.querySelector('.list-item-template').content;
   const cardClone = cardContent.querySelector('.card').cloneNode(true);
-  cardClone.querySelector('.card__photo').src = initialCards[5].link;
-  cardClone.querySelector('.card__name').textContent = initialCards[5].name;
+  const cardPhoto = cardClone.querySelector('.card__photo');
+  const cardTitle = cardClone.querySelector('.card__name');
+  cardPhoto.src = item.link;
+  cardTitle.textContent = item.name;
   list.prepend(cardClone);
+  setListeners();
 }
 
+initialCards.forEach(item => {renderCard(item)});//перебор массива
 
-initialCards.forEach((item) => {renderCard()});
-  
+//Слушатели событий
+function setListeners(cardClone){
+  const deleteButton = document.querySelector(".card__button-delete");//кнопка удаления карточки
+  deleteButton.addEventListener('click', deleteCard);
+  const likeButton = document.querySelector(".card__button-like");
+  likeButton.addEventListener('click',likeActive);
+  const openPhoto = document.querySelector('card__photo');
+/*/openPhoto.addEventListener('click',)*/
+  };
+
+function likeActive() {
+  likeButton.classList.add("card__button-like_active");//лайк меняет цвет
+};////// ЛАЙК ТОЛЬКО НА ОДНОЙ КАРТОЧКЕ
+
+ function deleteCard(){
+  const deleteButton = document.querySelector(".card__button-delete");//удаление карточки
+  const deleteCardClone = deleteButton.closest('.card');///// ПОЧЕМУ УДАЛЯЕТСЯ ПРЕДЫДУЩАЯ КАРТОЧКА????
+  deleteCardClone.remove();
+ }
+ 
+ 
+ 

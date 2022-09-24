@@ -10,9 +10,7 @@
   background-position-y: center;
   height: 19px;
 }
-.card__button-like:active {
-  background-image: url(../../../images/like-active.svg);
-}
+
 .card__button-like:hover {
   opacity: .5;
 }
