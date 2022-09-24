@@ -1,0 +1,24 @@
+.popup__add-card_save {
+    max-width: 238px;
+  background-color: #000000;
+  color: #ffffff;
+  max-height: 50px;
+  min-height: 48px;
+  margin-top: 40px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 17px;
+  justify-content: center;
+}
+.popup__add-card_save:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 562px) {
+  .popup__add-card_save {
+    max-width: 358px;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+}

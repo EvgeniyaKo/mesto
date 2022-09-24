@@ -1,7 +1,8 @@
-.place__container {
+.card__container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   overflow: hidden;
   align-items: center;
 }
+  

@@ -1,11 +1,11 @@
-.places {
+.cards {
 
   padding-top: 36px;
   max-width: 880px;
   
 }
 @media screen and (min-width: 562px) {
-  .places {
+  .cards {
     padding-bottom: 60px;
     padding-top: 23px;
   }

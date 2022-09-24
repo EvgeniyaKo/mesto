@@ -1,4 +1,4 @@
-.place__button-like {
+.card__button-like {
   width: 22px;
   margin-right: 20px;
   margin-left: 0;
@@ -10,9 +10,9 @@
   background-position-y: center;
   height: 19px;
 }
-.place__button-like:active {
+.card__button-like:active {
   background-image: url(../../../images/like-active.svg);
 }
-.place__button-like:hover {
+.card__button-like:hover {
   opacity: .5;
 }

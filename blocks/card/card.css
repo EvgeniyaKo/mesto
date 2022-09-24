@@ -1,4 +1,4 @@
-.place {
+.card {
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -8,4 +8,5 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  position: relative;
 }

@@ -1,4 +1,4 @@
-.places__list {
+.cards__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 280px));
   gap: 20px;
