@@ -101,6 +101,7 @@ function setListeners(cardClone){
   };
 
 function likeActive() {
+  const likeButton = document.querySelector(".card__button-like");
   likeButton.classList.add("card__button-like_active");//лайк меняет цвет
 };////// ЛАЙК ТОЛЬКО НА ОДНОЙ КАРТОЧКЕ
 
