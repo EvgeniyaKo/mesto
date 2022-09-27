@@ -43,7 +43,7 @@
       <p class="footer__copiright" lang="en">&copy; 2020 Mesto Russia</p>
     </footer>
 
-<!--карточка в списке-->
+<!--карточка в списке--->
     <template class="list-item-template">
       <li class="card">
           <img
@@ -64,20 +64,21 @@
     </template>
 
 
-<!---фото-попап-->
+<!---фото-попап---->
 <template class=template_photo>
-  <div class="popup_photo">
-  <figure class="card__photo_open">
-
+  <div class="popup">
+  <figure class="card__popup_container">
+    <img class="card__photo_popup" src=https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg>
+    <figcaption><span class="card__popup_title"></span></figcaption>
+    <button class="button popup__button-close" type="button"></button>
   </figure>
-  <figcaption class="card__photo_title"></figcaption>
 </div>
   </template>
 
 
-<!------попап-редактирование профиля-->
-    <div class="popup">
-      <div class="popup__container">
+<!------попап-редактирование профиля---->
+   <div class="popup popup_edit">
+      <div class="popup__edit-profile">
         <h3 class="popup__title">Редактировать профиль</h3>
         <form action="#" class="popup__form">
           <input
@@ -99,20 +100,20 @@
         <button class="button popup__button-close" type="button"></button>
       </div>
     </div>
-  <!----попап добавление карточки-->
-    <div class="popup__add-card">
-      <div class="popup__container">
+  <!--попап добавление карточки-->
+    <div class="popup popup_add">
+      <div class="popup__add-card">
         <h3 class="popup__title">Новое место</h3>
         <form action="#" class="popup__form">
           <input
             type="text"
-            cardholder="Название"
+            placeholder="Название"
             class="popup__input popup__input_name_card"
             name="card"
           />
           <input
             type="text"
-            cardholder="Ссылка на картинку"
+            placeholder= "Ссылка на картинку"
             class="popup__input popup__input_name_link"
             name="link"
           />
