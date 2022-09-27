@@ -13,10 +13,12 @@ const popupSave = document.querySelector(".popup__button-save");
 function openPopup(popup) {
   popup.classList.add("popup_opened");
 };
+
 function popupForm(){
   inputName.value = profileName.textContent;
   inputJob.value = profileJob.textContent;
 };
+
 function openEditPopup(popupEdit){
   openPopup(popupEdit);
   popupForm(popupEdit);
@@ -38,23 +40,26 @@ closePopupButton.addEventListener("click", closePopup);
 formElement.addEventListener("submit", submitHandlerEdit);
 
 ///////ПОПАП ДОБАВЛЕНИЯ КАРТОЧКИ/////
-const popupAdd = document.querySelector(".popup_add");
-const addCardButton = document.querySelector(".profile__button-add");
+const popupAdd = popup.querySelector(".popup_add");
+const addCardButton = popup.querySelector(".profile__button-add");
 const inputcardName = document.querySelector(".popup__input_name_card");
 const popupcardLink = document.querySelector(".popup__input_name_link");
 const closePopupCardButton = document.querySelector(".popup__add-card_close");
 
-//function openPopupAdd() {
-  //openPopup(popupAdd);
-//};
+/*addCardButton.addEventListener('click', () => {
+  openPopup(popupAdd);
+});*/
 
-function closePopupAdd(popupAdd) {
-  closePopup(closePopupCardButton);
+function openPopupAdd() {
+ openPopup(popupAdd);
 };
-addCardButton.addEventListener('click', ()=> {
-  openPopup(popupAdd)});
 
-closePopupCardButton.addEventListener("click", closePopupAdd);
+
+//function closePopupAdd(popupAdd) {
+  //closePopup(addCardButton);
+//};
+//addCardButton.addEventListener("click", openPopupAdd);
+//closePopupCardButton.addEventListener("click", closePopupAdd);
 
 
 
@@ -124,12 +129,12 @@ function setListeners(cardContent){
   const cardPrewieAlt = document.querySelector('.card__photo_popup');
  
 
-/*function openCardPrewie(evt){
+function openCardPrewie(evt){
   openPopup(cardPrewie);
   cardPrewieCaption.textContent = evt.target.textContent;
   cardPrewieImage.src = evt.target.src;
   cardPrewieAlt.alt = evt.target.alt;
-};*/
+};
 
 
 
