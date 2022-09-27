@@ -3,9 +3,9 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-    visibility: hidden;
+    /*visibility: hidden;
     opacity: 0;
-    transition: visibility 3s, opacity ease 0.2s;
+    transition: visibility 3s, opacity ease 0.2s;*/
   }
   
   @media screen and (min-width: 562px) {

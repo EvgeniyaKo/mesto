@@ -10,7 +10,7 @@ const profileJob = document.querySelector(".profile__job");
 const popupSave = document.querySelector(".popup__button-save");
 
 /////ПОПАП РЕДАКТИРОВАНИЯ ПРОФИЛЯ//////
-function openPopup(popup) {
+function openPopup() {
   popup.classList.add("popup_opened");
 };
 
@@ -24,7 +24,7 @@ function openEditPopup(popupEdit){
   popupForm(popupEdit);
 };
 
-function closePopup (popup) {
+function closePopup(popup) {
   popup.classList.remove("popup_opened");
 };
 
@@ -50,16 +50,16 @@ const closePopupCardButton = document.querySelector(".popup__add-card_close");
   openPopup(popupAdd);
 });*/
 
-function openPopupAdd() {
+function openPopupAdd(popupAd) {
  openPopup(popupAdd);
 };
 
 
-//function closePopupAdd(popupAdd) {
-  //closePopup(addCardButton);
-//};
+function closePopupAdd(popupAdd) {
+  closePopup(addCardButton);
+};
 //addCardButton.addEventListener("click", openPopupAdd);
-//closePopupCardButton.addEventListener("click", closePopupAdd);
+closePopupCardButton.addEventListener("click", closePopupAdd);
 
 
 
@@ -123,10 +123,10 @@ function setListeners(cardContent){
   openPhoto.addEventListener('click', openCardPrewie);
   };
 
-  const cardPrewie = document.querySelector('.card__popup_container');
-  const cardPrewieImage = document.querySelector('.card__photo_popup');
-  const cardPrewieCaption = document.querySelector('.card__popup_title');
-  const cardPrewieAlt = document.querySelector('.card__photo_popup');
+  const cardPrewie = document.querySelector('.popup_preview');
+  const cardPrewieImage = document.querySelector('.card__preview_img');
+  const cardPrewieCaption = document.querySelector('.card__prewiev_title');
+  const cardPrewieAlt = document.querySelector('.card__preview_img');
  
 
 function openCardPrewie(evt){
@@ -153,7 +153,7 @@ function openCardPrewie(evt){
 
  /*function popupCardOpen(openPopup){
    const popupCardTemplate = document.querySelector('.template_photo').content;
-   /*const popupCard = popupCardTemplate.querySelector(".popup");
+   const popupCard = popupCardTemplate.querySelector(".popup");
    const popupCardPhoto = card.querySelector('.card__photo');
    const popupCardTitle = card.querySelector('.card__name')
    openPopup(popupCardOpen);
